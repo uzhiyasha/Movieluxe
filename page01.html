@@ -65,6 +65,18 @@
             }
         });
 
+        // Add event listener to the green button2
+        greenButton2.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://movieluxee.blogspot.com/2024/06/bird-box-barcelona.html';
+            }
+        });
 
         // Refresh the page every 5 seconds
         setInterval(function() {
