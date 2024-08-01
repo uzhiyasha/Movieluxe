@@ -25,17 +25,53 @@
         කියලා තියන විදියට  කරොත්  විතරයි ඔයාට Movies බලන්න පුළුවන්. <br> You can watch the Movies only if you follow the instructions.<br><br> 
         ඒක නිසා කියපු විදිහට පිලිවෙලට කරන්න. <br> fallow this Rules. </p>
 
-    <button id="redButton" class="btnRed2"style="-webkit-text-size-adjust: auto; background-color: red; border-radius: 10px;
+
+<button id="redButton" class="btnRed2"style="-webkit-text-size-adjust: auto; background-color: red; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  >Click</button><br>
-    <button id="greenButton" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+
+    <button id="greenButton1" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 01 </button><br>
+
     <button id="greenButton2" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
-        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 02 </button>
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 02 </button><br>
+
+    <button id="greenButton3" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 03 </button><br>
+
+<button id="greenButton4" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 04 </button><br>
+
+    <button id="greenButton5" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 05 </button><br>
+
+    <button id="greenButton6" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 06 </button><br>
+
+<button id="greenButton7" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 07 </button><br>
+
+<button id="greenButton8" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 08 </button><br>
+
+    <button id="greenButton9" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 09 </button><br>
+
+    <button id="greenButton10" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 10 </button><br>
+
     <script>
         // Get references to the buttons
         const redButton = document.getElementById('redButton');
-        const greenButton = document.getElementById('greenButton');
+        const greenButton1 = document.getElementById('greenButton1');
         const greenButton2 = document.getElementById('greenButton2');
+       const greenButton3 = document.getElementById('greenButton3');
+        const greenButton4 = document.getElementById('greenButton4');
+        const greenButton5 = document.getElementById('greenButton5');
+        const greenButton6 = document.getElementById('greenButton6');
+        const greenButton7 = document.getElementById('greenButton7');
+        const greenButton8 = document.getElementById('greenButton8');
+        const greenButton9 = document.getElementById('greenButton9');
+        const greenButton10 = document.getElementById('greenButton10');
         
         // Check if the red button was previously clicked
         const redButtonClicked = sessionStorage.getItem('redButtonClicked');
@@ -50,10 +86,13 @@
             window.location.href = 'https://www.highrevenuenetwork.com/uccum8g1j?key=dbdc91a1494138cc50a17be31032ce44';
             // Store the state of the red button
             sessionStorage.setItem('redButtonClicked', true);
+
+
+
         });
 
-        // Add event listener to the green button
-        greenButton.addEventListener('click', function() {
+        // Add event listener to the green button1
+        greenButton1.addEventListener('click', function() {
             // Check if the red button was clicked
             const redButtonClicked = sessionStorage.getItem('redButtonClicked');
             if (!redButtonClicked) {
@@ -67,6 +106,110 @@
 
         // Add event listener to the green button2
         greenButton2.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://www.facebook.com/share/r/EDPGsjxxC6Nm7qCw/?mibextid=Mk4v2M';
+            }
+        });
+
+        // Add event listener to the green button3
+        greenButton3.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://www.facebook.com/share/r/EDPGsjxxC6Nm7qCw/?mibextid=Mk4v2M';
+            }
+        });
+
+        // Add event listener to the green button4
+        greenButton4.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://www.facebook.com/share/r/EDPGsjxxC6Nm7qCw/?mibextid=Mk4v2M';
+            }
+        });
+
+        // Add event listener to the green button5
+        greenButton5.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://www.facebook.com/share/r/EDPGsjxxC6Nm7qCw/?mibextid=Mk4v2M';
+            }
+        });
+
+        // Add event listener to the green button6
+        greenButton6.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://www.facebook.com/share/r/EDPGsjxxC6Nm7qCw/?mibextid=Mk4v2M';
+            }
+        });
+
+        // Add event listener to the green button7
+        greenButton7.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://www.facebook.com/share/r/EDPGsjxxC6Nm7qCw/?mibextid=Mk4v2M';
+            }
+        });
+
+        // Add event listener to the green button8
+        greenButton8.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://www.facebook.com/share/r/EDPGsjxxC6Nm7qCw/?mibextid=Mk4v2M';
+            }
+        });
+
+        // Add event listener to the green button9
+        greenButton9.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://www.facebook.com/share/r/EDPGsjxxC6Nm7qCw/?mibextid=Mk4v2M';
+            }
+        });
+
+        // Add event listener to the green button10
+        greenButton10.addEventListener('click', function() {
             // Check if the red button was clicked
             const redButtonClicked = sessionStorage.getItem('redButtonClicked');
             if (!redButtonClicked) {
