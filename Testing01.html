@@ -25,36 +25,24 @@
         කියලා තියන විදියට  කරොත්  විතරයි ඔයාට Movies බලන්න පුළුවන්. <br> You can watch the Movies only if you follow the instructions.<br><br> 
         ඒක නිසා කියපු විදිහට පිලිවෙලට කරන්න. <br> fallow this Rules. </p>
 
-    <button id="yellowButton" class="btnyellow2"style="-webkit-text-size-adjust: auto; background-color: yellow; border-radius: 10px;
+    <button id="redButton" class="btnRed2"style="-webkit-text-size-adjust: auto; background-color: red; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  >Click</button><br>
-    <button id="redButton" disabled class="btnRed2"style="-webkit-text-size-adjust: auto; background-color: red; border-radius: 10px;
+
+    <button id="greenButton" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  >Click</button><br>
+
     <button id="greenButton" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  >Watch the Movie</button>
 
     <script>
         // Get references to the buttons
-        const yellowButton = document.getElementById('yellowButton');
         const redButton = document.getElementById('redButton');
         const greenButton = document.getElementById('greenButton');
-
- // Check if the yellow button was previously clicked
-        const yellowButtonClicked = sessionStorage.getItem('yellowButtonClicked');
-        if (allButtonClicked) {
-            redButton.removeAttribute('disabled');
-        }
-
-        // Add event listener to the yellow button
-        yellowButton.addEventListener('click', function() {
-            // Redirect to the yellow page
-            window.location.href = 'https://www.highrevenuenetwork.com/uccum8g1j?key=dbdc91a1494138cc50a17be31032ce44';
-            // Store the state of the yellow button
-            sessionStorage.setItem('yellowButtonClicked', true);
-        });
+        const greenButton = document.getElementById('greenButton');
 
         // Check if the red button was previously clicked
         const redButtonClicked = sessionStorage.getItem('redButtonClicked');
-        if (allButtonClicked) {
+        if (redButtonClicked) {
             greenButton.removeAttribute('disabled');
         }
 
