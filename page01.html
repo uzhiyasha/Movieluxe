@@ -28,13 +28,15 @@
     <button id="redButton" class="btnRed2"style="-webkit-text-size-adjust: auto; background-color: red; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  >Click</button><br>
     <button id="greenButton" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+        color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  >Watch the Movie<br>
+    <button id="greenButton" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  >Watch the Movie</button>
-
     <script>
         // Get references to the buttons
         const redButton = document.getElementById('redButton');
         const greenButton = document.getElementById('greenButton');
-
+        const greenButton = document.getElementById('greenButton');
+        
         // Check if the red button was previously clicked
         const redButtonClicked = sessionStorage.getItem('redButtonClicked');
         if (redButtonClicked) {
