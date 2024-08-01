@@ -26,7 +26,7 @@
         ඒක නිසා කියපු විදිහට පිලිවෙලට කරන්න. <br> fallow this Rules. </p>
 
 
-<button id="redButton" class="btnRed2"style="-webkit-text-size-adjust: auto; background-color: red; border-radius: 10px;
+    <button id="redButton" class="btnRed2"style="-webkit-text-size-adjust: auto; background-color: red; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  >Click</button><br>
 
     <button id="greenButton1" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
@@ -38,7 +38,7 @@
     <button id="greenButton3" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 03 </button><br>
 
-<button id="greenButton4" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+    <button id="greenButton4" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 04 </button><br>
 
     <button id="greenButton5" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
@@ -47,10 +47,10 @@
     <button id="greenButton6" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 06 </button><br>
 
-<button id="greenButton7" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+    <button id="greenButton7" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 07 </button><br>
 
-<button id="greenButton8" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
+    <button id="greenButton8" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
         color: white; display: block; font-size: 16px; height: 60px; margin: 0px auto; width: 230px;"  > Episode 08 </button><br>
 
     <button id="greenButton9" disabled class="btnGreen2"style="-webkit-text-size-adjust: auto; background-color: green; border-radius: 10px;
@@ -64,7 +64,7 @@
         const redButton = document.getElementById('redButton');
         const greenButton1 = document.getElementById('greenButton1');
         const greenButton2 = document.getElementById('greenButton2');
-       const greenButton3 = document.getElementById('greenButton3');
+        const greenButton3 = document.getElementById('greenButton3');
         const greenButton4 = document.getElementById('greenButton4');
         const greenButton5 = document.getElementById('greenButton5');
         const greenButton6 = document.getElementById('greenButton6');
@@ -76,8 +76,16 @@
         // Check if the red button was previously clicked
         const redButtonClicked = sessionStorage.getItem('redButtonClicked');
         if (redButtonClicked) {
-            greenButton.removeAttribute('disabled');
+            greenButton1.removeAttribute('disabled');
             greenButton2.removeAttribute('disabled');
+            greenButton3.removeAttribute('disabled');
+            greenButton4.removeAttribute('disabled');
+            greenButton5.removeAttribute('disabled');
+            greenButton6.removeAttribute('disabled');
+            greenButton7.removeAttribute('disabled');
+            greenButton8.removeAttribute('disabled');
+            greenButton9.removeAttribute('disabled');
+            greenButton10.removeAttribute('disabled');
         }
 
         // Add event listener to the red button
